@@ -14,7 +14,7 @@
  "use strict";
 
  export default async function (event, context, logger) {
-  logger.info(
+    logger.info(
     `Invoking salesforcesdkjs Function with payload ${JSON.stringify(
       event.data || {}
     )}`
@@ -33,10 +33,10 @@
      throw new Error(`Please provide the XSD value`);
    }
  
-  
- 
+
      // Query Big Object using the SalesforceSDK DataApi 
-     const soql = `SELECT Created_date__c, S3_Bucket__c, S3_Key__c, Client_Identifier__c, Code_Demand_Case_XML__c, CUPS__c, Invoice_Date__c, Invoice_Fiscal_Code__c, Issuing_Company_Code__c, Pass_Code__c, Process_Code__c, Receiving_Company_Code__c, Sequential__c, Xsd__c FROM CTR_F1_invoice__b WHERE Xsd__c >= '${event.data.cxsd}' LIMIT 10`;
+     const soql = `SELECT Created_date__c, S3_Bucket__c, S3_Key__c, Client_Identifier__c, Code_Demand_Case_XML__c, CUPS__c, Invoice_Date__c, Invoice_Fiscal_Code__c, Issuing_Company_Code__c, Pass_Code__c, Process_Code__c, Receiving_Company_Code__c, Sequential__c, Xsd__c FROM CTR_F1_invoice__b WHERE Xsd__c >= '${event.data.cxsd}' LIMIT 451`;
+
      const queryRes = await context.org.dataApi.query(soql);
 
      const queryResults = queryRes.records;
@@ -44,47 +44,48 @@
 
     for (const edato of queryResults){
 
-    
+        //console.log(edato);
+
         // Define a record using the RecordForCreate type and providing the Developer Name
         var vdata = uow.registerCreate({
             type: "CTR_F1_invoice_Mirror__c",
             fields: {
-                    S3_Bucket__c: edato.S3_Bucket__c, 
-                    S3_Key__c: edato.S3_Key__c, 
-                    Client_Identifier__c: edato.Client_Identifier__c, 
-                    Code_Demand_Case_XML__c: edato.Code_Demand_Case_XML__c, 
-                    CUPS__c: edato.CUPS__c, 
-                    Invoice_Date__c: edato.Invoice_Date__c, 
-                    Invoice_Fiscal_Code__c: edato.Invoice_Fiscal_Code__c, 
-                    Issuing_Company_Code__c: edato.Issuing_Company_Code__c, 
-                    Pass_Code__c: edato.Pass_Code__c, 
-                    Process_Code__c: edato.Process_Code__c, 
-                    Receiving_Company_Code__c: edato.Receiving_Company_Code__c, 
-                    Sequential__c: edato.Sequential__c, 
-                    Xsd__c: edato.Xsd__c,
-                    F1_enlace__c: "Function",
+                    S3_Bucket__c: edato.fields.s3_bucket__c, 
+                    S3_Key__c: edato.fields.s3_key__c, 
+                    Client_Identifier__c: edato.fields.client_identifier__c, 
+                    Code_Demand_Case_XML__c: edato.fields.code_demand_case_xml__c, 
+                    CUPS__c: edato.fields.cups__c, 
+                    Invoice_Date__c: edato.fields.invoice_date__c, 
+                    Invoice_Fiscal_Code__c: edato.fields.invoice_fiscal_code__c, 
+                    Issuing_Company_Code__c: edato.fields.issuing_company_code__c, 
+                    Pass_Code__c: edato.fields.pass_code__c, 
+                    Process_Code__c: edato.fields.process_code__c, 
+                    Receiving_Company_Code__c: edato.fields.receiving_company_code__c, 
+                    Sequential__c: edato.fields.sequential__c, 
+                    Xsd__c: edato.fields.xsd__c,
+                    F1_enlace__c: "a7y5r000000Gunu",
                 },
         });
-
-            // Insert the record using the SalesforceSDK DataApi and get the new Record Id from the result
-           // const { id: recordId } = await context.org.dataApi.create(vdata);
             
     }
        
     try {
+
         // Commit the Unit of Work with all the previous registered operations
         const response = await context.org.dataApi.commitUnitOfWork(uow);
-        // Construct the result by getting the Id from the successful inserts
-        var result = {
-            CTR_F1_invoice_Mirror__cId: response.get(CTR_F1_invoice_Mirror__c).id,
-          };
 
-        return result;
+        //console.log(response);
+        // Construct the result by getting the Id from the successful inserts
+        //console.log(response);
+
+        return queryResults;
 
     } catch (err) {
      // Catch any DML errors and pass the throw an error with the message
      const errorMessage = `Failed to insert record. Root Cause : ${err.message}`;
      logger.error(errorMessage);
+     
+     console.log(errorMessage);
      throw new Error(errorMessage);
     }
 
