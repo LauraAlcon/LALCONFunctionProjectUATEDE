@@ -24,7 +24,7 @@
   const uow = context.org.dataApi.newUnitOfWork();
  
    // Extract Properties from Payload
-   const { s3bucket, s3key, clientid, codedemand, createddate,cups, invoicedate, fiscalcode, rcompanycode, passcode, processcode, companycode, sequential, cxsd } = event.data;
+   const { limite, s3bucket, s3key, clientid, codedemand, createddate,cups, invoicedate, fiscalcode, rcompanycode, passcode, processcode, companycode, sequential, cxsd } = event.data;
 
  
    // Validate the payload params
@@ -32,10 +32,14 @@
      //throw new Error(`Please provide XSD value`);
      throw new Error(`Please provide the XSD value`);
    }
+   if (!limite) {
+    //throw new Error(`Please provide limit value`);
+    throw new Error(`Please provide the limit value`);
+  }
  
 
      // Query Big Object using the SalesforceSDK DataApi 
-     const soql = `SELECT Created_date__c, S3_Bucket__c, S3_Key__c, Client_Identifier__c, Code_Demand_Case_XML__c, CUPS__c, Invoice_Date__c, Invoice_Fiscal_Code__c, Issuing_Company_Code__c, Pass_Code__c, Process_Code__c, Receiving_Company_Code__c, Sequential__c, Xsd__c FROM CTR_F1_invoice__b WHERE Xsd__c >= '${event.data.cxsd}' LIMIT 451`;
+     const soql = `SELECT Created_date__c, S3_Bucket__c, S3_Key__c, Client_Identifier__c, Code_Demand_Case_XML__c, CUPS__c, Invoice_Date__c, Invoice_Fiscal_Code__c, Issuing_Company_Code__c, Pass_Code__c, Process_Code__c, Receiving_Company_Code__c, Sequential__c, Xsd__c FROM CTR_F1_invoice__b WHERE Xsd__c >= '${event.data.cxsd}' LIMIT ${event.data.limite} `;
 
      const queryRes = await context.org.dataApi.query(soql);
 
