@@ -8948,5 +8948,556 @@ Using target-org UATEDEFunctions login credential to initialize context
       "sequential__c": "00",
       "xsd__c": "0"
     }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000031192_ES0031102265059003PQ0F_000.xml",
+      "client_identifier__c": "B82846825",
+      "code_demand_case_xml__c": "303003587152",
+      "cups__c": "ES0031102265059003PQ0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000031192",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0636",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000030467_ES0031102267311007XK0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013537151",
+      "cups__c": "ES0031102267311007XK0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000030467",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000025140_ES0031102268143019YP0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013531396",
+      "cups__c": "ES0031102268143019YP0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000025140",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000028496_ES0031102268178007DJ0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013535119",
+      "cups__c": "ES0031102268178007DJ0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000028496",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000030697_ES0031102269821002YA0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013537184",
+      "cups__c": "ES0031102269821002YA0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000030697",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000027773_ES0031102270746007LV0F_000.xml",
+      "client_identifier__c": "B82846825",
+      "code_demand_case_xml__c": "000013534370",
+      "cups__c": "ES0031102270746007LV0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000027773",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0636",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000028336_ES0031102275791021VG0F_000.xml",
+      "client_identifier__c": "B82846825",
+      "code_demand_case_xml__c": "000013534784",
+      "cups__c": "ES0031102275791021VG0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000028336",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0636",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000027321_ES0031102280636001BB0F_000.xml",
+      "client_identifier__c": "B82846825",
+      "code_demand_case_xml__c": "000013533792",
+      "cups__c": "ES0031102280636001BB0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000027321",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0636",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000027336_ES0031102280636001BB0F_000.xml",
+      "client_identifier__c": "B82846825",
+      "code_demand_case_xml__c": "000013533794",
+      "cups__c": "ES0031102280636001BB0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000027336",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0636",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000025654_ES0031102280968001WY0F_000.xml",
+      "client_identifier__c": "B82846825",
+      "code_demand_case_xml__c": "000013532271",
+      "cups__c": "ES0031102280968001WY0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000025654",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0636",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000028903_ES0031102281284001XD0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013535391",
+      "cups__c": "ES0031102281284001XD0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000028903",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000030005_ES0031102281686001PS0F_000.xml",
+      "client_identifier__c": "B82846825",
+      "code_demand_case_xml__c": "000013536485",
+      "cups__c": "ES0031102281686001PS0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000030005",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0636",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000030033_ES0031102281719001VX0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013536489",
+      "cups__c": "ES0031102281719001VX0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000030033",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000029450_ES0031102282427001AR0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013535989",
+      "cups__c": "ES0031102282427001AR0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000029450",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000029530_ES0031102282454001AE0F_000.xml",
+      "client_identifier__c": "B82846825",
+      "code_demand_case_xml__c": "000013536403",
+      "cups__c": "ES0031102282454001AE0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000029530",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0636",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000028609_ES0031102284518012CJ0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013535520",
+      "cups__c": "ES0031102284518012CJ0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000028609",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000027477_ES0031102285129005CB0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013533590",
+      "cups__c": "ES0031102285129005CB0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000027477",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000028677_ES0031102288767016TC0F_000.xml",
+      "client_identifier__c": "B82846825",
+      "code_demand_case_xml__c": "000013535349",
+      "cups__c": "ES0031102288767016TC0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000028677",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0636",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000029701_ES0031102296832005VJ0F_000.xml",
+      "client_identifier__c": "B82846825",
+      "code_demand_case_xml__c": "000013536247",
+      "cups__c": "ES0031102296832005VJ0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000029701",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0636",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000029769_ES0031102302559001LD0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013536624",
+      "cups__c": "ES0031102302559001LD0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000029769",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000027560_ES0031102314554002QG0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013534237",
+      "cups__c": "ES0031102314554002QG0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000027560",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000030106_ES0031102322386001EC0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013536671",
+      "cups__c": "ES0031102322386001EC0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000030106",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000027175_ES0031102328189002VY0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013533946",
+      "cups__c": "ES0031102328189002VY0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000027175",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000027143_ES0031102328269001EB0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013533940",
+      "cups__c": "ES0031102328269001EB0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000027143",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000027158_ES0031102328269001EB0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013533943",
+      "cups__c": "ES0031102328269001EB0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000027158",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000024915_ES0031102330154003FW0F_000.xml",
+      "client_identifier__c": "B82846825",
+      "code_demand_case_xml__c": "000013531552",
+      "cups__c": "ES0031102330154003FW0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000024915",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0636",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000029066_ES0031102331546001SV0F_000.xml",
+      "client_identifier__c": "A81948077",
+      "code_demand_case_xml__c": "000013535636",
+      "cups__c": "ES0031102331546001SV0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000029066",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0091",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000026542_ES0031102337328001VR0F_000.xml",
+      "client_identifier__c": "B82846825",
+      "code_demand_case_xml__c": "000013533055",
+      "cups__c": "ES0031102337328001VR0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000026542",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0636",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
+  },
+  {
+    "type": "CTR_F1_invoice__b",
+    "fields": {
+      "created_date__c": "2022-05-10T00:00:00.000+0000",
+      "s3_bucket__c": "infr-net-shared-prod",
+      "s3_key__c": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/10/F1-EE-171221C000030176_ES0031102351870001FK0F_000.xml",
+      "client_identifier__c": "B82846825",
+      "code_demand_case_xml__c": "000013536681",
+      "cups__c": "ES0031102351870001FK0F",
+      "invoice_date__c": "2022-05-09T00:00:00.000+0000",
+      "invoice_fiscal_code__c": "171221C000030176",
+      "issuing_company_code__c": "0023",
+      "pass_code__c": "01",
+      "process_code__c": "F1",
+      "receiving_company_code__c": "0636",
+      "sequential__c": "00",
+      "xsd__c": "0"
+    }
   }
 ]

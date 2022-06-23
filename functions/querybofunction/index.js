@@ -1,5 +1,5 @@
 /**
- * Describe mytestquerybofunction here.
+ * Describe Querybofunction here.
  *
  * The exported method is the entry point for your code when the function is invoked. 
  *
@@ -38,6 +38,7 @@
   }
  
 
+  try {
      // Query Big Object using the SalesforceSDK DataApi 
      const soql = `SELECT Created_date__c, S3_Bucket__c, S3_Key__c, Client_Identifier__c, Code_Demand_Case_XML__c, CUPS__c, Invoice_Date__c, Invoice_Fiscal_Code__c, Issuing_Company_Code__c, Pass_Code__c, Process_Code__c, Receiving_Company_Code__c, Sequential__c, Xsd__c FROM CTR_F1_invoice__b WHERE Xsd__c >= '${event.data.cxsd}' LIMIT ${event.data.limite} `;
 
@@ -75,12 +76,12 @@
             
     }
        
-    try {
+//    try {
 
         // Commit the Unit of Work with all the previous registered operations
-        const response = await context.org.dataApi.commitUnitOfWork(uow);
+        //const response = await context.org.dataApi.commitUnitOfWork(uow);
 
-        //console.log(response);
+        console.log(uow);
         // Construct the result by getting the Id from the successful inserts
 
         return uow;
