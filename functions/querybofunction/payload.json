@@ -1,5 +1,5 @@
 {
-    "limite": "9900",
+    "limite": "50000",
     "s3bucket": "infr-net-shared-prod", 
     "s3key": "CUATRO-CONT-UATEDE/CTR_F1_invoice__b/2022/05/27/F1-EE-171221C000034874_ES0031102111632003MJ0F_000.xml", 
     "clientid": "A81948077", 

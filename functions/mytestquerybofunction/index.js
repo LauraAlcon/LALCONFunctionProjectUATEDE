@@ -24,22 +24,93 @@
   const uow = context.org.dataApi.newUnitOfWork();
  
    // Extract Properties from Payload
-   const { limite, s3bucket, s3key, clientid, codedemand, createddate,cups, invoicedate, fiscalcode, rcompanycode, passcode, processcode, companycode, sequential, cxsd } = event.data;
+   const { limite, s3bucket, s3key, clientid, codedemand, createddate, cups, invoicedate, fiscalcode, rcompanycode, passcode, processcode, companycode, sequential, cxsd } = event.data;
+
+   //Initialize soql
+   var soql;
 
  
-   // Validate the payload params
-   if (!cxsd) {
-     //throw new Error(`Please provide XSD value`);
-     throw new Error(`Please provide the XSD value`);
-   }
+   // Validate the payload params and create query
+   
    if (!limite) {
     //throw new Error(`Please provide limit value`);
     throw new Error(`Please provide the limit value`);
   }
- 
 
+  if (!cxsd) {
+    //throw new Error(`Please provide XSD value`);
+    throw new Error(`Please provide the XSD value`);
+  }
+
+ 
+  if (cxsd && createddate && companycode && cups && fiscalcode){
+
+    soql = `SELECT Created_date__c, S3_Bucket__c, S3_Key__c, Client_Identifier__c, Code_Demand_Case_XML__c, CUPS__c, Invoice_Date__c, Invoice_Fiscal_Code__c, Issuing_Company_Code__c, Pass_Code__c, Process_Code__c, Receiving_Company_Code__c, Sequential__c, Xsd__c FROM CTR_F1_invoice__b 
+    WHERE Xsd__c = '${event.data.cxsd}' AND Created_date__c = ${event.data.createddate} AND Issuing_Company_Code__c = '${event.data.companycode}' AND CUPS__c = '${event.data.cups}' AND 
+    Invoice_Fiscal_Code__c = '${event.data.fiscalcode}' LIMIT ${event.data.limite} `;
+
+    console.log(`5`);
+
+    console.log(soql);
+
+  } else if (cxsd && createddate && companycode && cups && !fiscalcode) {
+
+    // Query Big Object using the SalesforceSDK DataApi using the 4 fields in the index
+    soql = `SELECT Created_date__c, S3_Bucket__c, S3_Key__c, Client_Identifier__c, Code_Demand_Case_XML__c, CUPS__c, Invoice_Date__c, Invoice_Fiscal_Code__c, Issuing_Company_Code__c, Pass_Code__c, Process_Code__c, Receiving_Company_Code__c, Sequential__c, Xsd__c FROM CTR_F1_invoice__b 
+    WHERE Xsd__c = '${event.data.cxsd}' AND Created_date__c = ${event.data.createddate} AND Issuing_Company_Code__c = '${event.data.companycode}' AND CUPS__c = '${event.data.cups}' 
+     LIMIT ${event.data.limite} `;
+
+     console.log(`4`);
+
+     console.log(soql);
+
+  } else if (cxsd && createddate && companycode && !cups && !fiscalcode){
+
+    // Query Big Object using the SalesforceSDK DataApi using the 3 fields in the index
+    soql = `SELECT Created_date__c, S3_Bucket__c, S3_Key__c, Client_Identifier__c, Code_Demand_Case_XML__c, CUPS__c, Invoice_Date__c, Invoice_Fiscal_Code__c, Issuing_Company_Code__c, Pass_Code__c, Process_Code__c, Receiving_Company_Code__c, Sequential__c, Xsd__c FROM CTR_F1_invoice__b 
+    WHERE Xsd__c = '${event.data.cxsd}' AND Created_date__c = ${event.data.createddate} AND Issuing_Company_Code__c = '${event.data.companycode}' LIMIT ${event.data.limite} `;
+
+    console.log(`3`);
+
+    console.log(soql);
+
+  } else if (cxsd && createddate && !companycode && !cups && !fiscalcode){
+
+     // Query Big Object using the SalesforceSDK DataApi using the 2 fields in the index
+     soql = `SELECT Created_date__c, S3_Bucket__c, S3_Key__c, Client_Identifier__c, Code_Demand_Case_XML__c, CUPS__c, Invoice_Date__c, Invoice_Fiscal_Code__c, Issuing_Company_Code__c, Pass_Code__c, Process_Code__c, Receiving_Company_Code__c, Sequential__c, Xsd__c FROM CTR_F1_invoice__b 
+     WHERE Xsd__c = '${event.data.cxsd}' AND Created_date__c = ${event.data.createddate} LIMIT ${event.data.limite} `;
+
+     console.log(`2`);
+
+     console.log(soql);
+
+  } else if (cxsd && !createddate && !companycode && !cups && !fiscalcode){
+
+    // Query Big Object using the SalesforceSDK DataApi using the 2 fields in the index
+    soql = `SELECT Created_date__c, S3_Bucket__c, S3_Key__c, Client_Identifier__c, Code_Demand_Case_XML__c, CUPS__c, Invoice_Date__c, Invoice_Fiscal_Code__c, Issuing_Company_Code__c, Pass_Code__c, Process_Code__c, Receiving_Company_Code__c, Sequential__c, Xsd__c FROM CTR_F1_invoice__b 
+    WHERE Xsd__c = '${event.data.cxsd}' LIMIT ${event.data.limite} `;
+
+    console.log(`1`);
+
+    console.log(soql);
+
+  } else {
+
+    soql = `SELECT Created_date__c, S3_Bucket__c, S3_Key__c, Client_Identifier__c, Code_Demand_Case_XML__c, CUPS__c, Invoice_Date__c, Invoice_Fiscal_Code__c, Issuing_Company_Code__c, Pass_Code__c, Process_Code__c, Receiving_Company_Code__c, Sequential__c, Xsd__c FROM CTR_F1_invoice__b 
+      WHERE Xsd__c = '${event.data.cxsd}' LIMIT ${event.data.limite} `;
+
+      console.log(`default!!!!`);
+
+  }
+
+  
      // Query Big Object using the SalesforceSDK DataApi 
-     const soql = `SELECT Created_date__c, S3_Bucket__c, S3_Key__c, Client_Identifier__c, Code_Demand_Case_XML__c, CUPS__c, Invoice_Date__c, Invoice_Fiscal_Code__c, Issuing_Company_Code__c, Pass_Code__c, Process_Code__c, Receiving_Company_Code__c, Sequential__c, Xsd__c FROM CTR_F1_invoice__b WHERE Xsd__c >= '${event.data.cxsd}' LIMIT ${event.data.limite} `;
+     //const soql = `SELECT Created_date__c, S3_Bucket__c, S3_Key__c, Client_Identifier__c, Code_Demand_Case_XML__c, CUPS__c, Invoice_Date__c, Invoice_Fiscal_Code__c, Issuing_Company_Code__c, Pass_Code__c, Process_Code__c, Receiving_Company_Code__c, Sequential__c, Xsd__c FROM CTR_F1_invoice__b WHERE Xsd__c = '${event.data.cxsd}' AND Created_date__c <= ${event.data.createddate} LIMIT ${event.data.limite} `;
+
+     console.log(`SOQL Final ... `);
+
+     console.log(soql);
+
 
      const queryRes = await context.org.dataApi.query(soql);
 
@@ -84,6 +155,7 @@
         // Construct the result by getting the Id from the successful inserts
 
         return uow;
+        //return queryResults;
 
     } catch (err) {
      // Catch any DML errors and pass the throw an error with the message

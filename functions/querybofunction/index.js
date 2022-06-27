@@ -46,6 +46,8 @@
 
      const queryResults = queryRes.records;
 
+     var count = 0;
+
 
     for (const edato of queryResults){
 
@@ -72,6 +74,8 @@
                 },
         });
 
+        count++;
+
         //console.log(edato.fields.code_demand_case_xml__c);
             
     }
@@ -84,11 +88,12 @@
         console.log(uow);
         // Construct the result by getting the Id from the successful inserts
 
-        return uow;
+        //return uow;
+        return (count);
 
     } catch (err) {
      // Catch any DML errors and pass the throw an error with the message
-     const errorMessage = `Failed to insert record. Root Cause : ${err.message}`;
+     const errorMessage = `Failed to query records. Root Cause : ${err.message}`;
      logger.error(errorMessage);
      
      console.log(errorMessage);
